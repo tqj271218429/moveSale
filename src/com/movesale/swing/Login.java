@@ -31,7 +31,7 @@ public class Login extends JFrame{
 		this.setLayout(null);
 		
 		lbl1 = new JLabel();
-		lbl1.setIcon(new ImageIcon("D:\\Backup\\Documents\\My Music\\电影.png"));
+		lbl1.setIcon(new ImageIcon("src\\电影.png"));
 		lbl1.setBounds(26, 22, 40, 40);
 		
 		lbl3 = new JLabel();
@@ -39,11 +39,11 @@ public class Login extends JFrame{
 		lbl3.setBounds(100, 22, 150, 40);
 		
 		lbl2 = new JLabel();
-		lbl2.setIcon(new ImageIcon("D:\\Backup\\Documents\\My Music\\电影(1).png"));
+		lbl2.setIcon(new ImageIcon("src\\电影(1).png"));
 		lbl2.setBounds(250, 22, 40, 40);
 		
 		lbl = new JLabel();
-		lbl.setIcon(new ImageIcon("D:\\Backup\\Documents\\My Music\\用户.png"));
+		lbl.setIcon(new ImageIcon("src\\用户.png"));
 		lbl.setBounds(26, 82, 40, 40);
 		txt = new JTextField();
 		txt.setColumns(10);
@@ -51,7 +51,7 @@ public class Login extends JFrame{
 		txt.setBounds(70, 82, 240, 40);
 		
 		lblpwd = new JLabel();
-		lblpwd.setIcon(new ImageIcon("D:\\Backup\\Documents\\My Music\\密码.png"));
+		lblpwd.setIcon(new ImageIcon("src\\密码.png"));
 		lblpwd.setBounds(26, 144, 40, 40);
 		pwd = new JPasswordField();
 		pwd.setEchoChar('*');

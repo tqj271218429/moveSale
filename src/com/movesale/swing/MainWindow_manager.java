@@ -6,6 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  * 管理员登录的主界面
@@ -59,6 +61,7 @@ public class MainWindow_manager extends JFrame{
 		menuStrat.add(itemLogin);
 		menuStrat.add(itemRegister);
 		menuStrat.add(itemCancellation);
+		menuStrat.addSeparator();
 		menuStrat.add(itemExit);
 		//查询项
 		menuQuery = new JMenu("查询");
@@ -66,6 +69,7 @@ public class MainWindow_manager extends JFrame{
 		itemName = new JMenuItem("按电影名称查询");
 		itemTime = new JMenuItem("按放映时间查询");
 		menuQuery.add(itemAll);
+		menuQuery.addSeparator();
 		menuQuery.add(itemName);
 		menuQuery.add(itemTime);
 		//管理
@@ -73,6 +77,7 @@ public class MainWindow_manager extends JFrame{
 		itemMoveup = new JMenuItem("电影上架");
 		itemMovedown = new JMenuItem("电影下架");
 		menuManage.add(itemMoveup);
+		menuManage.addSeparator();
 		menuManage.add(itemMovedown);
 		
 		menuInfo = new JMenu("用户管理");
@@ -87,7 +92,14 @@ public class MainWindow_manager extends JFrame{
 		itemCheck = new JMenuItem("检查订单");
 		itemDelete = new JMenuItem("删除订单");
 		menuOrder.add(itemCheck);
+		menuOrder.addSeparator();
 		menuOrder.add(itemDelete);
+		
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		menubar.add(menuStrat);
 		menubar.add(menuQuery);
@@ -101,8 +113,8 @@ public class MainWindow_manager extends JFrame{
 		
 	}
 	
-/*	public static void main(String[] args) {
+	public static void main(String[] args) {
 		new MainWindow_manager().setVisible(true);
-	}*/
+	}
 	
 }
