@@ -38,7 +38,7 @@ public class RegisterWindow extends JFrame {
 
 	private void initialize() {
 		jpanl = new JPanel();
-		jpanl.setBackground(Color.WHITE);
+		//jpanl.setBackground(Color.WHITE);
 		jpanl.setLayout(null);
 		
 		//ÊÖ»úºÅÂë
